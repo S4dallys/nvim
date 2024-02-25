@@ -1,4 +1,8 @@
-vim.g.shellcmdflag = "-c"
+-- fix ex commands
+vim.opt.shell = 'pwsh'
+vim.opt.shellcmdflag = '-nologo -noprofile -ExecutionPolicy RemoteSigned -command'
+vim.opt.shellxquote = ''
+
 vim.g.mapleader = " "
 
 -- vim.opt.guicursor = ""

@@ -47,6 +47,8 @@ return require('packer').startup(function(use)
 
     -- Fugitive
     use { "tpope/vim-fugitive" }
+    use "sindrets/diffview.nvim"
+    use 'nvim-tree/nvim-web-devicons'
 
     -- Conflict Marker
     use { "rhysd/conflict-marker.vim" }

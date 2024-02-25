@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dark_ocean.vim",
     url = "https://github.com/andrewlockvi/dark_ocean.vim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\emmet-vim",
@@ -190,6 +195,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

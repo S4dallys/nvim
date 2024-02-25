@@ -66,3 +66,5 @@ vim.keymap.set("i", "[<tab>", "[]<Left>")
 vim.keymap.set("i", "{<tab>", "{}<Left>")
 vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
 vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
+
+vim.keymap.set("n", "<leader>te", ":new<CR>:te<CR>:horizontal resize 10<CR>")
