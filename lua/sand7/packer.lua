@@ -50,6 +50,9 @@ return require('packer').startup(function(use)
     use "sindrets/diffview.nvim"
     use 'nvim-tree/nvim-web-devicons'
 
+    -- Trouble
+    use "folke/trouble.nvim"
+
     -- Conflict Marker
     use { "rhysd/conflict-marker.vim" }
 
@@ -61,6 +64,9 @@ return require('packer').startup(function(use)
 
     -- leap
     use { "ggandor/leap.nvim" }
+
+    -- scrollbar
+    use("petertriho/nvim-scrollbar")
 
     -- eyeliner
     use {
@@ -88,6 +94,9 @@ return require('packer').startup(function(use)
             {'saadparwaiz1/cmp_luasnip'},
         }
     }
+
+    -- Nerdcommenter
+    use 'preservim/nerdcommenter'
 
     -- Color Picker
     use ({"ziontee113/color-picker.nvim",
