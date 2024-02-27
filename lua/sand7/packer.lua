@@ -3,7 +3,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Themes
     use { "ribru17/bamboo.nvim" }
-    use { "rktjmp/lush.nvim" }
     use { "rose-pine/neovim" }
     use { "catppuccin/nvim", as = "catppuccin" }
     use { "vim-scripts/revolutions.vim" }
@@ -14,11 +13,7 @@ return require('packer').startup(function(use)
     use {
         'olivercederborg/poimandres.nvim',
         config = function()
-            require('poimandres').setup {
-                -- leave this setup function empty for default config
-                -- or refer to the configuration section
-                -- for configuration options
-            }
+            require('poimandres').setup { }
         end
     }
 
@@ -49,6 +44,9 @@ return require('packer').startup(function(use)
     use { "tpope/vim-fugitive" }
     use "sindrets/diffview.nvim"
     use 'nvim-tree/nvim-web-devicons'
+
+    -- mini files <3
+    use 'echasnovski/mini.files'
 
     -- Trouble
     use "folke/trouble.nvim"
@@ -88,11 +86,21 @@ return require('packer').startup(function(use)
             {'williamboman/mason.nvim'},
             {'williamboman/mason-lspconfig.nvim'},
             {'neovim/nvim-lspconfig'},
-            {'hrsh7th/nvim-cmp'},
             {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'hrsh7th/cmp-cmdline'},
+            {'hrsh7th/nvim-cmp'},
             {'L3MON4D3/LuaSnip'},
             {'saadparwaiz1/cmp_luasnip'},
         }
+    }
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
     }
 
     -- Nerdcommenter

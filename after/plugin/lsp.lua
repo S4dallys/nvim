@@ -29,7 +29,7 @@ require('mason-lspconfig').setup({
 })
 
 local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
+local cmd_select = {behavior = cmp.SelectBehavior.Select}
 
 cmp.setup({
     sources = {
