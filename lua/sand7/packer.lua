@@ -105,6 +105,10 @@ return require('packer').startup(function(use)
 
     -- Nerdcommenter
     use 'preservim/nerdcommenter'
+    use {
+        "folke/todo-comments.nvim",
+        config = {}
+    }
 
     -- Color Picker
     use ({"ziontee113/color-picker.nvim",

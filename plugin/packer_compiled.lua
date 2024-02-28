@@ -141,7 +141,7 @@ _G.packer_plugins = {
     url = "https://github.com/mattn/emmet-vim"
   },
   ["eyeliner.nvim"] = {
-    config = { "\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\21highlight_on_key\2\bdim\2\nsetup\reyeliner\frequire\0" },
+    config = { "\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\bdim\2\21highlight_on_key\2\nsetup\reyeliner\frequire\0" },
     loaded = true,
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\eyeliner.nvim",
     url = "https://github.com/jinh0/eyeliner.nvim"
@@ -270,6 +270,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    config = {},
+    loaded = true,
+    path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
   ["trouble.nvim"] = {
     loaded = true,
     path = "C:\\Users\\S4d\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\trouble.nvim",
@@ -298,18 +304,21 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: color-picker.nvim
-time([[Config for color-picker.nvim]], true)
-try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17color-picker\frequire\0", "config", "color-picker.nvim")
-time([[Config for color-picker.nvim]], false)
--- Config for: eyeliner.nvim
-time([[Config for eyeliner.nvim]], true)
-try_loadstring("\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\21highlight_on_key\2\bdim\2\nsetup\reyeliner\frequire\0", "config", "eyeliner.nvim")
-time([[Config for eyeliner.nvim]], false)
 -- Config for: poimandres.nvim
 time([[Config for poimandres.nvim]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15poimandres\frequire\0", "config", "poimandres.nvim")
 time([[Config for poimandres.nvim]], false)
+-- Config for: eyeliner.nvim
+time([[Config for eyeliner.nvim]], true)
+try_loadstring("\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\bdim\2\21highlight_on_key\2\nsetup\reyeliner\frequire\0", "config", "eyeliner.nvim")
+time([[Config for eyeliner.nvim]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+time([[Config for todo-comments.nvim]], false)
+-- Config for: color-picker.nvim
+time([[Config for color-picker.nvim]], true)
+try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17color-picker\frequire\0", "config", "color-picker.nvim")
+time([[Config for color-picker.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
