@@ -95,13 +95,6 @@ return require('packer').startup(function(use)
             {'saadparwaiz1/cmp_luasnip'},
         }
     }
-    use {
-        "windwp/nvim-autopairs",
-        event = "InsertEnter",
-        config = function()
-            require("nvim-autopairs").setup {}
-        end
-    }
 
     -- Nerdcommenter
     use 'preservim/nerdcommenter'

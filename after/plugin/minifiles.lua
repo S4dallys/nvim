@@ -49,4 +49,4 @@ require('mini.files').setup(
   },
 })
 
-vim.keymap.set("n", "<leader>pv", ":lua MiniFiles.open()<CR>")
+vim.keymap.set("n", "<leader>pv", function () vim.cmd(":lua MiniFiles.open(vim.api.nvim_buf_get_name(0), false)") end)
