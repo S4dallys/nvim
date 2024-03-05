@@ -1,4 +1,4 @@
-🌵 Started using nvim on Jan. 15, 2024 🌵
+🌵 Started using nvim on Jan. 5, 2024 🌵
   
 ### 🖋️ TODO:
 - [ ] Make a plugin
