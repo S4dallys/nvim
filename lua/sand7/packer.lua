@@ -20,6 +20,9 @@ return require('packer').startup(function(use)
     -- Packer 
     use 'wbthomason/packer.nvim'
 
+    -- Cellular Automaton
+    use 'eandrju/cellular-automaton.nvim'
+
     -- Telescope
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.5",
@@ -59,6 +62,9 @@ return require('packer').startup(function(use)
 
     -- Trouble
     use { "folke/trouble.nvim" }
+
+    -- Targets
+    use 'wellle/targets.vim'
 
     -- Conflict Marker
     use { "rhysd/conflict-marker.vim" }

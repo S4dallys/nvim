@@ -71,3 +71,7 @@ vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
 vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
 
 vim.keymap.set("n", "<leader>te", ":new<CR>:te<CR>:horizontal resize 10<CR>")
+
+-- di, and ci,
+vim.keymap.set("n", "di,", "f,dT,x")
+vim.keymap.set("n", "ci,", "f,dT,xi")
