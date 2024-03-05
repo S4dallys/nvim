@@ -22,16 +22,16 @@ return require('packer').startup(function(use)
 
     -- Telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        "nvim-telescope/telescope.nvim", tag = "0.1.5",
+        requires = { {"nvim-lua/plenary.nvim"} }
     }
 
     -- Treesitter
     use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate"
     }
-    use { 'nvim-treesitter/playground' }
+    use { "nvim-treesitter/playground" }
 
 
     use {
@@ -43,13 +43,22 @@ return require('packer').startup(function(use)
     -- Fugitive
     use { "tpope/vim-fugitive" }
     use "sindrets/diffview.nvim"
-    use 'nvim-tree/nvim-web-devicons'
+    use "nvim-tree/nvim-web-devicons"
+
+    -- Surround
+    use { "tpope/vim-surround" }
+
+    -- Statusline
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
     -- mini files <3
-    use 'echasnovski/mini.files'
+    use { "echasnovski/mini.files" }
 
     -- Trouble
-    use "folke/trouble.nvim"
+    use { "folke/trouble.nvim" }
 
     -- Conflict Marker
     use { "rhysd/conflict-marker.vim" }
@@ -59,9 +68,6 @@ return require('packer').startup(function(use)
 
     -- Emmet
     use { "mattn/emmet-vim" }
-
-    -- leap
-    use { "ggandor/leap.nvim" }
 
     -- scrollbar
     use("petertriho/nvim-scrollbar")
