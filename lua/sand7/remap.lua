@@ -72,6 +72,8 @@ vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
 
 vim.keymap.set("n", "<leader>te", ":new<CR>:te<CR>:horizontal resize 10<CR>")
 
--- di, and ci,
-vim.keymap.set("n", "di,", "f,dT,x")
-vim.keymap.set("n", "ci,", "f,dT,xi")
+-- resize splits
+vim.keymap.set("n", "<leader>vs", ":vsplit<CR><C-w>l")
+vim.keymap.set("n", "<leader>vo", ":only<CR>")
+vim.keymap.set("n", "<A-h>", "5<C-w><")
+vim.keymap.set("n", "<A-l>", "5<C-w>>")
