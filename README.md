@@ -3,5 +3,6 @@
 ### 🖋️ TODO:
 - [ ] Make a plugin
 - [x] Fix (somewhat) broken LSP
-- [ ] Create snippets with luasnip
+- [x] Create snippets with luasnip
 - [ ] Master touch typing with numbers and symbols
+- [ ] Make an epic but minimalist dash
