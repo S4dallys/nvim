@@ -2,6 +2,6 @@
   
 ### 🖋️ TODO:
 - [ ] Make a plugin
-- [ ] Fix (somewhat) broken LSP
+- [x] Fix (somewhat) broken LSP
 - [ ] Create snippets with luasnip
 - [ ] Master touch typing with numbers and symbols

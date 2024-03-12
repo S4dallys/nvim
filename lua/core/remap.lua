@@ -36,15 +36,9 @@ vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
--- TODO: floating window with buffer list 
-vim.keymap.set("n", "<C-k>", "<cmd>bnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>bprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/Appdata/Local/nvim/lua/sand7/packer.lua<CR>");
-
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
@@ -76,7 +70,7 @@ vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
 vim.keymap.set("n", "<leader>te", ":new<CR>:te<CR>:horizontal resize 10<CR>")
 
 -- resize splits
-vim.keymap.set("n", "<leader>vs", ":vsplit<CR><C-w>l")
+vim.keymap.set("n", "<leader>vs", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>vo", ":only<CR>")
 vim.keymap.set("n", "<A-j>", "5<C-w><")
 vim.keymap.set("n", "<A-k>", "5<C-w>>")

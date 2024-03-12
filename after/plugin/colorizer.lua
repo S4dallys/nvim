@@ -2,6 +2,7 @@ require'colorizer'.setup(
 {
     'css';
     'html';
+    'js';
 },
 {
 RGB = true; -- #RGB hex codes

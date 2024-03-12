@@ -11,6 +11,4 @@ function ColorMyPencils(color)
     -- vim.api.nvim_set_hl(0, 'ColorColumn', { fg = "none", bg = "none"} )
 end
 
-
-
 ColorMyPencils()

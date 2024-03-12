@@ -1,2 +1,2 @@
-require("sand7")
+require("core")
 print("Welcome back, sand7!")
