@@ -2,6 +2,7 @@ local custom = require'lualine.themes.palenight'
 
 require('lualine').setup {
     options = {
+        disabled_filetypes = { "alpha" },
         theme = custom,
         -- component_separators = { left = '', right = ''},
         -- section_separators = { left = '', right = ''},

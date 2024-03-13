@@ -1,2 +1,2 @@
 require("core")
-print("Welcome back, sand7!")
+require("themes")

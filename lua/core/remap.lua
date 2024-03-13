@@ -74,3 +74,7 @@ vim.keymap.set("n", "<leader>vs", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>vo", ":only<CR>")
 vim.keymap.set("n", "<A-j>", "5<C-w><")
 vim.keymap.set("n", "<A-k>", "5<C-w>>")
+
+-- cd
+vim.keymap.set("n", "<leader>cdh", ":cd %:h<CR>:cd<CR>")
+
