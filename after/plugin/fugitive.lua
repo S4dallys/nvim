@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>gs", ":G<CR>:horizontal resize 8<CR>");
+vim.keymap.set("n", "<leader>gs", ":G<CR><C-w>H:vertical resize 40<CR>");

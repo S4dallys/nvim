@@ -62,6 +62,8 @@ vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, vim.op
 vim.keymap.set("i", "\"<tab>", "\"\"<Left>")
 vim.keymap.set("i", "'<tab>", "''<Left>")
 vim.keymap.set("i", "(<tab>", "()<Left>")
+vim.keymap.set("i", "<<tab>", "<><Left>")
+vim.keymap.set("i", "><tab>", "</><Left>")
 vim.keymap.set("i", "[<tab>", "[]<Left>")
 vim.keymap.set("i", "{<tab>", "{}<Left>")
 vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
