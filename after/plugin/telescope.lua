@@ -20,6 +20,11 @@ require('telescope').setup{
           preview = {
               hide_on_startup = false
           }
+      },
+      buffers = {
+          preview = {
+              hide_on_startup = false
+          }
       }
   }
 }

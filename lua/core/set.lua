@@ -43,3 +43,9 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = ""
+
+-- nerdcommenter
+vim.g.NERDCreateDefaultMappings = 1
+vim.g.NERDSpaceDelims = 1
+vim.g.NERDDefaultAlign = 'left'
+vim.g.NERDCommentEmptyLines = 1

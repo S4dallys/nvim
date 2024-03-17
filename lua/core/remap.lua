@@ -32,8 +32,8 @@ vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 -- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
--- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
--- vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
@@ -80,3 +80,16 @@ vim.keymap.set("n", "<A-k>", "5<C-w>>")
 -- cd
 vim.keymap.set("n", "<leader>cdh", ":cd %:h<CR>:cd<CR>")
 
+-- fugitive git
+vim.keymap.set("n", "<leader>gs", ":G<CR><C-w>H:vertical resize 40<CR>");
+
+--undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
+-- remap "go to next instance" binds
+vim.keymap.set("n", "(", "*")
+vim.keymap.set("n", ")", "#")
+
+-- trouble and todo remaps
+vim.keymap.set("n", "<leader>tt", function() vim.cmd("TroubleToggle document_diagnostics") end)
+vim.keymap.set("n", "<leader>pt", function() vim.cmd("TodoTelescope") end)

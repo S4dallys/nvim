@@ -38,6 +38,8 @@ local plugins = {
                 highlight_on_key = true,
                 dim = true
             }
+            vim.api.nvim_set_hl(0, "EyelinerSecondary", { fg = "#5df4c7", underline = true })
+            vim.api.nvim_set_hl(0, "EyelinerPrimary", { fg = "#a00054", underline = true })
         end
     },
     "nvim-lua/plenary.nvim",
@@ -61,9 +63,25 @@ local plugins = {
     },
     "preservim/nerdcommenter",
     "norcalli/nvim-colorizer.lua",
-    "petertriho/nvim-scrollbar",
+    {
+        "petertriho/nvim-scrollbar",
+        config = function()
+            require("scrollbar").setup()
+        end
+    },
     {
         "nvim-treesitter/nvim-treesitter",
+        config = function ()
+            require'nvim-treesitter.configs'.setup {
+                ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },
+                sync_install = false,
+                auto_install = true,
+                highlight = {
+                    enable = true,
+                    additional_vim_regex_highlighting = false,
+                },
+            }
+        end
     },
     "nvim-tree/nvim-web-devicons",
     {
@@ -88,24 +106,27 @@ local plugins = {
     {
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
-        opts = { }
+        opts = { },
+        config = function()
+            require('todo-comments').setup()
+        end
     },
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = { },
+        config = function ()
+            local signs = { Error = "", Warn = "", Hint = "󰌵", Info = "" }
+
+            for type, icon in pairs(signs) do
+                local hl = "DiagnosticSign" .. type
+                vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+            end
+        end
     },
     "mbbill/undotree",
     "ThePrimeagen/vim-be-good",
     "tpope/vim-fugitive",
-    "tpope/vim-surround",
-    {
-        "folke/drop.nvim",
-        event = "VimEnter",
-        config = function()
-            require("themes.drop-config")
-        end,
-    },
     {
         'goolord/alpha-nvim',
         dependencies = {
