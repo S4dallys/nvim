@@ -1,10 +1,31 @@
 local harpoon = require("harpoon")
 harpoon:setup()
 
-vim.keymap.set("n", "<leader>hp", function() harpoon:list():append() end)
+local function replace(index)
+    local rel_path = vim.fn.expand('%')
+    local length = harpoon:list():length()
+
+    if index <= length then
+        local replaced = harpoon:list()['items'][index].value
+
+        for i, val in ipairs(harpoon:list()['items']) do
+            if val.value == rel_path then
+                harpoon:list()['items'][i].value = replaced
+                break
+            end
+        end
+
+        harpoon:list()['items'][index].value = rel_path
+    else
+        harpoon:list():append()
+    end
+end
+
 vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
-vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
-vim.keymap.set("n", "<C-t>", function() harpoon:list():select(2) end)
-vim.keymap.set("n", "<C-n>", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
+local keys = { "j", "k", "l", ";" }
+
+for i, key in ipairs(keys) do
+    vim.keymap.set("n", "s" .. key, function() harpoon:list():select(i) end)
+    vim.keymap.set("n", "m" .. key, function() replace(i) end)
+end

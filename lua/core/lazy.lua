@@ -137,6 +137,15 @@ local plugins = {
             require("themes.alpha-config")
         end
     },
+    {
+        "letieu/harpoon-lualine",
+        dependencies = {
+            {
+                "ThePrimeagen/harpoon",
+                branch = "harpoon2",
+            }
+        },
+    }
 }
 
 local opts = {}

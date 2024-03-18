@@ -12,19 +12,14 @@ require('telescope').setup{
       "node_modules"
     },
     preview = {
-        hide_on_startup = true -- hide previewer when picker starts
+        hide_on_startup = false -- hide previewer when picker starts
     }
   },
   pickers = {
-      git_status = {
+      find_files = {
           preview = {
-              hide_on_startup = false
+              hide_on_startup = true
           }
       },
-      buffers = {
-          preview = {
-              hide_on_startup = false
-          }
-      }
   }
 }
