@@ -61,7 +61,6 @@ local plugins = {
         "echasnovski/mini.files",
         version = false
     },
-    "preservim/nerdcommenter",
     "norcalli/nvim-colorizer.lua",
     {
         "petertriho/nvim-scrollbar",
