@@ -145,7 +145,8 @@ local plugins = {
                 branch = "harpoon2",
             }
         },
-    }
+    },
+    "ggandor/leap.nvim",
 }
 
 local opts = {}

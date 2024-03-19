@@ -50,3 +50,14 @@ ls.add_snippets("javascript",
     ]],
     { i(1) }))
 })
+
+ls.add_snippets("css",
+{
+    s("flexdef", fmt([[
+    display: flex;
+    flex-direction: {};
+    justify-content: {};
+    align-items: {};
+    ]],
+    { i(1, "row"), i(2, "center"), i(3, "center") })),
+})
