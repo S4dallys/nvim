@@ -31,17 +31,22 @@ ls.add_snippets("json",
 
 ls.add_snippets("javascript",
 {
-    s("ag", fmt([[
-    app.get("/{}", (req, res) => {{
+    s("get", fmt([[
+    .get("/{}", (req, res) => {{
         {}
     }})
     ]],
     { i(1), i(2) })),
 
-    s("ap", fmt([[
-    app.post("/{}", (req, res) => {{
+    s("post", fmt([[
+    .post("/{}", (req, res) => {{
         {}
     }})
     ]],
-    { i(1), i(2) }))
+    { i(1), i(2) })),
+
+    s("$", fmt([[
+    ${{{}}}
+    ]],
+    { i(1) }))
 })

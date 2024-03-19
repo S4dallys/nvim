@@ -23,3 +23,7 @@ require('telescope').setup{
       },
   }
 }
+
+vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { link = "Function" })
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { link = "Function" })
+vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { link = "Function" })
