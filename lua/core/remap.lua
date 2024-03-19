@@ -19,8 +19,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- next greatest remap ever : asbjornHaland (system paste)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set({ "n", "v" }, "d", [["_d]])
-vim.keymap.set({ "n", "v" }, "<leader>d", "d")
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("v", "<leader>p", "p")
 vim.keymap.set("v", "p", [["_dp]])
 vim.keymap.set({ "n", "v" }, "<leader>c", "c")
@@ -71,12 +70,13 @@ vim.keymap.set("i", "{<tab>", "{}<Left>")
 vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
 vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
 
+-- TODO: get repeatable >, <, +, - for resizing
+-- TODO: get new commenter plugin, preferably Folke
+-- TODO: fix treesitter for nvim docs
 -- splits remaps
 vim.keymap.set("n", "<leader><tab>", "<C-w><C-w>");
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>vo", ":only<CR>")
-vim.keymap.set("n", "<A-j>", "5<C-w><")
-vim.keymap.set("n", "<A-k>", "5<C-w>>")
 
 -- changing working dir
 vim.keymap.set("n", "<leader>cdh", ":cd %:h<CR>:cd<CR>")
