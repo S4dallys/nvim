@@ -32,18 +32,18 @@ ls.add_snippets("json",
 ls.add_snippets("javascript",
 {
     s("get", fmt([[
-    .get("/{}", (req, res) => {{
+    {}.get("/{}", (req, res) => {{
         {}
     }})
     ]],
-    { i(1), i(2) })),
+    { i(1), i(2), i(3) })),
 
     s("post", fmt([[
-    .post("/{}", (req, res) => {{
+    {}.post("/{}", (req, res) => {{
         {}
     }})
     ]],
-    { i(1), i(2) })),
+    { i(1), i(2), i(3) })),
 
     s("$", fmt([[
     ${{{}}}

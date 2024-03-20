@@ -148,8 +148,6 @@ local plugins = {
     },
     "ggandor/leap.nvim",
     "tpope/vim-commentary",
-    'camspiers/animate.vim',
-    'camspiers/lens.vim',
 }
 
 local opts = {}
