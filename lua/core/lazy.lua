@@ -34,7 +34,7 @@ local plugins = {
     {
         'jinh0/eyeliner.nvim',
         config = function()
-            require'eyeliner'.setup {
+            require 'eyeliner'.setup {
                 highlight_on_key = true,
                 dim = true
             }
@@ -70,8 +70,8 @@ local plugins = {
     },
     {
         "nvim-treesitter/nvim-treesitter",
-        config = function ()
-            require'nvim-treesitter.configs'.setup {
+        config = function()
+            require 'nvim-treesitter.configs'.setup {
                 ensure_installed = { "javascript", "typescript", "c", "lua", "vim", "vimdoc", "query" },
                 sync_install = false,
                 auto_install = true,
@@ -89,23 +89,24 @@ local plugins = {
         priority = 1000,
         config = function()
             require('poimandres').setup {
-                bold_vert_split = true, -- use bold vertical separators
-                dim_nc_background = true, -- dim 'non-current' window backgrounds
-                disable_background = false, -- disable background
+                bold_vert_split = true,           -- use bold vertical separators
+                dim_nc_background = true,         -- dim 'non-current' window backgrounds
+                disable_background = false,       -- disable background
                 disable_float_background = false, -- disable background for floats
-                disable_italics = false, -- disable italics
+                disable_italics = false,          -- disable italics
             }
         end,
     },
     "wellle/targets.vim",
     {
-        "nvim-telescope/telescope.nvim", tag = "0.1.5",
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.5",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
     {
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
-        opts = { },
+        opts = {},
         config = function()
             require('todo-comments').setup()
         end
@@ -113,8 +114,8 @@ local plugins = {
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
-        opts = { },
-        config = function ()
+        opts = {},
+        config = function()
             local signs = { Error = "", Warn = "", Hint = "󰌵", Info = "" }
 
             for type, icon in pairs(signs) do
@@ -147,6 +148,8 @@ local plugins = {
     },
     "ggandor/leap.nvim",
     "tpope/vim-commentary",
+    'camspiers/animate.vim',
+    'camspiers/lens.vim',
 }
 
 local opts = {}
