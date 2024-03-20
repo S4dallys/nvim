@@ -146,6 +146,7 @@ local plugins = {
         },
     },
     "ggandor/leap.nvim",
+    "tpope/vim-commentary",
 }
 
 local opts = {}
