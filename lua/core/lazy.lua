@@ -38,8 +38,6 @@ local plugins = {
                 highlight_on_key = true,
                 dim = true
             }
-            vim.api.nvim_set_hl(0, "EyelinerSecondary", { fg = "#5df4c7", underline = true })
-            vim.api.nvim_set_hl(0, "EyelinerPrimary", { fg = "#a00054", underline = true })
         end
     },
     "nvim-lua/plenary.nvim",
