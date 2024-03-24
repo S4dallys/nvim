@@ -32,7 +32,12 @@ require("lspconfig").lua_ls.setup({
 
 require("lspconfig").tsserver.setup({
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
+    init_options = {
+        preferences = {
+            disableSuggestions = true
+        }
+    }
 })
 
 require("lspconfig").eslint.setup({
