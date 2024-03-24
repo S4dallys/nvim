@@ -148,6 +148,7 @@ local plugins = {
     },
     "ggandor/leap.nvim",
     "tpope/vim-commentary",
+    "nvim-pack/nvim-spectre",
 }
 
 local opts = {}

@@ -104,10 +104,14 @@ vim.keymap.set("n", "<leader>tt", function() vim.cmd("TroubleToggle document_dia
 vim.keymap.set("n", "<leader>pt", function() vim.cmd("TodoTelescope") end)
 
 -- minifiles
-vim.keymap.set("n", "<leader>pv", function() vim.cmd(":lua MiniFiles.open(vim.api.nvim_buf_get_name(0), false)") end)
+vim.keymap.set("n", "<leader>pv", function() vim.cmd(":lua MiniFiles.open(vim.api.vim_buf_get_name(0), false)") end)
 
 -- splits resize
 vim.keymap.set('n', '<A-h>', '<C-w>3<')
 vim.keymap.set('n', '<A-l>', '<C-w>3>')
 vim.keymap.set('n', '<A-j>', '<C-w>3-')
 vim.keymap.set('n', '<A-k>', '<C-w>3+')
+
+-- spectre remaps
+vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").toggle()<CR>')
+vim.keymap.set('n', '<leader>sf', '<cmd>lua require("spectre").open_file_search()<CR>')
