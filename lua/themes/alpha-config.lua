@@ -22,4 +22,3 @@ dashboard.section.footer.val = {
 }
 
 alpha.setup(dashboard.opts)
-vim.cmd("Alpha")
