@@ -5,6 +5,12 @@ ls.config.set_config({
     enable_autosnippets = true
 })
 
+ls.filetype_extend('javascript', { 'javascriptreact' })
+ls.filetype_extend('javascript', { 'html' })
+ls.filetype_extend('javascriptreact', { 'js' })
+ls.filetype_extend('javascriptreact', { 'html' })
+ls.filetype_extend('handlebars', { 'html' })
+
 vim.keymap.set({"i", "s"}, "<C-j>", function() ls.jump( 1) end, {silent = true})
 vim.keymap.set({"i", "s"}, "<C-k>", function() ls.jump(-1) end, {silent = true})
 vim.keymap.set("n", "<leader>lss", ":edit C:/Users/S4d/Appdata/Local/nvim/after/plugin/luasnip.lua<CR>")

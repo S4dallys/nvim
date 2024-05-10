@@ -147,6 +147,14 @@ local plugins = {
     "ggandor/leap.nvim",
     "tpope/vim-commentary",
     "nvim-pack/nvim-spectre",
+    {
+        'AlexvZyl/nordic.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require 'nordic'.load()
+        end
+    },
 }
 
 local opts = {}

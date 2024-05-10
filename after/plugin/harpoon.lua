@@ -17,7 +17,7 @@ local function replace(index)
 
         harpoon:list()['items'][index].value = rel_path
     else
-        harpoon:list():append()
+        harpoon:list():add()
     end
 end
 
@@ -27,5 +27,5 @@ local keys = { "j", "k", "l", ";" }
 
 for i, key in ipairs(keys) do
     vim.keymap.set("n", "s" .. key, function() harpoon:list():select(i) end)
-    vim.keymap.set("n", "m" .. key, function() replace(i) end)
+    vim.keymap.set("n", "S" .. key, function() replace(i) end)
 end
