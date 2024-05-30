@@ -14,6 +14,7 @@ vim.g.mapleader = " "
 -- vim.opt.guicursor = ""
 vim.opt.cursorline = true
 vim.opt.showmode = false
+vim.opt.shellslash = true
 
 vim.opt.nu = true
 vim.opt.wrap = false

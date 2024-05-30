@@ -155,6 +155,10 @@ local plugins = {
             require 'nordic'.load()
         end
     },
+    {
+        'stevearc/conform.nvim',
+        opts = {},
+    },
 }
 
 local opts = {}
