@@ -52,7 +52,12 @@ require("lspconfig").tailwindcss.setup({
 
 require("lspconfig").clangd.setup({
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
+    cmd = { "clangd", "--fallback-style=webkit" },
+    filetypes = { "c", "h", "cpp", "objc", "objcpp" },
+    root_dir = function(fname)
+        return require 'lspconfig'.util.root_pattern('compile_flags.txt')(fname) or vim.loop.cwd()
+    end,
 })
 
 require("lspconfig").pyright.setup({
