@@ -18,6 +18,7 @@ local plugins = {
         build = "make install_jsregexp"
     },
     "eandrju/cellular-automaton.nvim",
+    "lunarvim/Onedarker.nvim",
     "rafamadriz/friendly-snippets",
     "hrsh7th/nvim-cmp",
     "saadparwaiz1/cmp_luasnip",
@@ -159,6 +160,7 @@ local plugins = {
         'stevearc/conform.nvim',
         opts = {},
     },
+    "mfussenegger/nvim-jdtls",
 }
 
 local opts = {}
