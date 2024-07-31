@@ -161,6 +161,13 @@ local plugins = {
         opts = {},
     },
     "mfussenegger/nvim-jdtls",
+    {
+        "rachartier/tiny-inline-diagnostic.nvim",
+        event = "VeryLazy",
+        config = function()
+            require('tiny-inline-diagnostic').setup()
+        end
+    },
 }
 
 local opts = {}

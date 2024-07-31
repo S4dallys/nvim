@@ -11,6 +11,7 @@ ls.filetype_extend('javascriptreact', { 'javascript' })
 ls.filetype_extend('javascriptreact', { 'html' })
 ls.filetype_extend('handlebars', { 'html' })
 ls.filetype_extend('svelte', { 'javascript' })
+ls.filetype_extend('php', { 'html' })
 
 vim.keymap.set({ "i", "s" }, "<C-j>", function() ls.jump(1) end, { silent = true })
 vim.keymap.set({ "i", "s" }, "<C-k>", function() ls.jump(-1) end, { silent = true })

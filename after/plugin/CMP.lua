@@ -20,7 +20,6 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'luasnip' },
         { name = 'nvim_lsp' },
-    }, {
         { name = 'buffer' },
     }),
     formatting = {
@@ -29,10 +28,6 @@ cmp.setup({
             maxwidth = 50,
             ellipsis_char = '...',
             show_labelDetails = true,
-
-            -- before = function (entry, vim_item)
-            --     return vim_item
-            -- end
         })
     },
 })

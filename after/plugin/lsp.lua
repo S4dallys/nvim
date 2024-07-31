@@ -50,6 +50,11 @@ require("lspconfig").tailwindcss.setup({
     capabilities = capabilities
 })
 
+require("lspconfig").intelephense.setup({
+    on_attach = on_attach,
+    capabilities = capabilities
+})
+
 require("lspconfig").clangd.setup({
     on_attach = on_attach,
     capabilities = capabilities,
@@ -67,6 +72,13 @@ require("lspconfig").pyright.setup({
 
 require("lspconfig").html.setup({
     on_attach = on_attach,
+    settings = {
+        css = {
+            lint = {
+                validProperties = {},
+            },
+        },
+    },
     capabilities = capabilities
 })
 
