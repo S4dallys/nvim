@@ -5,6 +5,9 @@ vim.api.nvim_set_hl(0, "DiffDelete", { fg = "#d78787" })
 vim.api.nvim_set_hl(0, "DiffRemoved", { link = "DiffDelete" })
 -- vim.api.nvim_set_hl(0, "DiffChanged", { bg = "#ffda54" })
 
+-- NormalFloat
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "None" })
+
 -- floatborder
 vim.api.nvim_set_hl(0, "FloatBorder", { link = "function" })
 
