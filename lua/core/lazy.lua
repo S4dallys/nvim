@@ -56,9 +56,29 @@ local plugins = {
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     },
+    -- {
+    --     "echasnovski/mini.files",
+    --     version = false
+    -- },
     {
-        "echasnovski/mini.files",
-        version = false
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+        },
+        config = function()
+            require("neo-tree").setup({
+                filesystem = {
+                    window = {
+                        mappings = {
+                            ["-"] = "navigate_up",
+                        }
+                    }
+                }
+            })
+        end
     },
     "norcalli/nvim-colorizer.lua",
     {
