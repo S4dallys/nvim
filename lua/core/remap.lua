@@ -79,7 +79,11 @@ vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
 vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
 
 -- splits remaps
-vim.keymap.set("n", "<leader><tab>", "<C-w><C-w>");
+-- vim.keymap.set("n", "<leader><tab>", "<C-w><C-w>");
+vim.keymap.set("n", "<C-h>", "<C-w>h");
+vim.keymap.set("n", "<C-l>", "<C-w>l");
+vim.keymap.set("n", "<C-j>", "<C-w>j");
+vim.keymap.set("n", "<C-k>", "<C-w>k");
 vim.keymap.set("n", "<leader>vs", ":vsplit<CR>")
 vim.keymap.set("n", "<leader>vh", ":split<CR>")
 vim.keymap.set("n", "<leader>vo", ":only<CR>")
@@ -108,6 +112,7 @@ vim.keymap.set("n", "<leader>pt", function() vim.cmd("TodoTelescope") end)
 
 -- neotree
 vim.keymap.set("n", "<leader>pv", function() vim.cmd(":Neotree toggle position=right") end)
+vim.keymap.set("n", "<leader>pd", function() vim.cmd(":Neotree document_symbols toggle position=right") end)
 
 -- splits resize
 vim.keymap.set('n', '<A-h>', '<C-w>3<')

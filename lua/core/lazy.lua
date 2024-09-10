@@ -70,6 +70,10 @@ local plugins = {
         },
         config = function()
             require("neo-tree").setup({
+                sources = {
+                    "filesystem",
+                    "document_symbols"
+                },
                 filesystem = {
                     window = {
                         mappings = {
